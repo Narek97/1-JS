@@ -1,0 +1,16 @@
+.userFhoto {
+    width: 80px;
+}
+
+.selectPage{
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+.selectPage1{
+    margin-right: 5px;
+    cursor: pointer;
+    
+}

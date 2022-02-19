@@ -1,0 +1,21 @@
+
+/* css rashirenyaner miachnelu hamar */
+
+
+.container{
+    padding-top: 2rm;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.logo{
+    background-image: url(f6a35176e4f28dddb6de1cbd3fd95539.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}

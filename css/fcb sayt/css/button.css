@@ -1,0 +1,8 @@
+.signup {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  background-color: lawngreen; }
+
+button:focus {
+  outline: none; }

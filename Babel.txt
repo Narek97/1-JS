@@ -1,0 +1,74 @@
+mpm i -D @babel/core @babel/cli => babely i anelu hamar
+npx babel src --out-dir build => babely run talu hamar
+
+proektum stextum enq .babelrs file u mejy grum {
+  "plugins": [
+    stex dnum enq en plaginneri anunery vor mez petqa orinak
+    "@babel/plugin-transform-block-scoping",
+    "@babel/plugin-transform-classes",
+    "@babel/plugin-transform-template-literals"
+  ]
+}
+
+kam vorpeszi .babelrs filum sax plaginneri anunery chgrenq npm install --save-dev @babel/preset-env enq anum 
+u sench grum es es5 bolor plaginnery uni
+{
+  "presets": [
+    "@babel/preset-env"
+  ]
+}
+
+baych kan koder voronq hly chen ofichyal chen spasarkvum run taluch babely asuma voronq en pet instal anel 
+u install enq anum u .babelrs filum grum orinak
+
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
+
+ete konkret brauzern enq uzum build anenq nshum enq brauzery u vor versiaich lini
+"debug": true => consolm cuycha tali vor brauzeru inch plagina build anum
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": true,
+        "targets": [
+          "last 2 chrome versions",
+          "last 2 firefox versions",
+          "last 2 ios versions"
+        ]
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
+
+ete uzum enq build anenq en brauzernery voroq ogtagortum en orinak 0.3% bajanordnery
+ "not ie >0"  => nshanakuma bolor brauzernery bachi orinak internerExploerich build linen
+ "@babel/react" => reacty build anelu hamar
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": true,
+        "targets": [
+          "> 0.3%",
+          "not ie >0"
+        ],
+	"@babel/react"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

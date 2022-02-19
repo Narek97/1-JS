@@ -1,0 +1,78 @@
+.main__paragraph2 {
+  cursor: pointer;
+}
+
+.main__paragraph2:hover {
+  color: blue;
+}
+
+.main {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: blueviolet;
+  color: aqua;
+}
+
+.main__paragraph1, .main__paragraph2 {
+  color: yellow;
+}
+
+.main__paragraph3 {
+  font-weight: bold;
+}
+
+.main__paragraph3:hover {
+  cursor: none;
+}
+
+.main__paragraph2 {
+  cursor: pointer;
+}
+
+.main__paragraph2:hover {
+  color: blue;
+}
+
+.main {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: blueviolet;
+  color: aqua;
+}
+
+.main__paragraph1, .main__paragraph2 {
+  color: yellow;
+}
+
+.main__paragraph3 {
+  font-weight: bold;
+}
+
+.main__paragraph3:hover {
+  cursor: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+							Directivi
+
+1.Directiv stextelu hamar ng g d anuny --skipTests
+ete uzum enq konkrey papki mej ng g d papkianuny/direc.anuny --skipTests
+
+2.direktivi selector dashtum talis enq anun u et anuny talis en tegin vorin uzum enq kapenq
+or.
+direktivum-um 
+@Directive({selector: '[appStyle]'}
+
+export class StyleDirective {
+  constructor(private elRef: ElementRef,private renderer:Renderer2)  {
+    console.log(elRef);
+    this.renderer.setStyle(this.elRef.nativeElement,'color','blue')
+    // elRef.nativeElement.style.color = 'red' karanq senche tanq baych chishty vervi dzevna
+  c
+}
+  
+cankachat html-um <p appStyle>Lorem ipsum</p>
+
+3. dinamik kerpov directivum gortoxutyun anelu hamar @HostListener('ununy') funkcia
+
+or
+  @HostListener('click',['$event.target']) onClick(event:Event):void {
+    console.log(event)
+  }
+
+  @HostListener('mouseenter') onEnter(){
+    this.renderer.setStyle(this.elRef.nativeElement,'color','blue')
+  }
+
+  @HostListener('mouseleave') onLeave(){
+    this.renderer.setStyle(this.elRef.nativeElement,'color',null)
+  }
+
+4. directivin parametr poxanchelu hamar htmlum grum enq [dir.anuny]='param.anuny'
+ete objekt chi karang aranch 'bindingi -> []' anenq
+or.
+ <p
+    appStyle="green"
+    [dStyles]="{
+    border: '1px solid blue',
+    borderRadius:'5px'
+    }"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, obcaecati?
+  </p>
+direktivum yndunum enq  @Input('anuny') 
+or.
+  @Input('appStyle') color: string = 'blue'
+  @Input() dStyles:{border?:string,fontWeight?:string,borderRadius?:string}
+
+u @HostListener funkciayi mijochov katarum gortoxutyun
+or.
+ @HostListener('mouseenter') onEnter() {
+    this.renderer.setStyle(this.elRef.nativeElement, 'color', this.color)
+    this.renderer.setStyle(this.elRef.nativeElement, 'border', this.dStyles.border)
+  }
+karch grelu hamar ogtagortum enq   @HostBinding('')
+or.
+  @HostBinding('style.color') elColor = null
+  @HostBinding('style.border') elBorder = null
+
+u @HostListenerum grum
+
+  @HostListener('mouseenter') onEnter() {
+    this.elColor = this.color
+    this.elBorder = this.dStyles.border
+  }
+

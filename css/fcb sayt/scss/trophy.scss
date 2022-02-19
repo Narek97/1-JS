@@ -1,0 +1,24 @@
+@import './mixins.scss';
+
+.barca__title {
+  margin-top: 20px;
+  h1 {
+    text-align: center;
+  }
+  section {
+    margin-top: 20px;
+    display: flex;
+  }
+}
+
+.barca__title__ucl {
+  background: url('https://i.dlpng.com/static/png/5390422-uefa-champions-league-trophy-magnet-champions-league-final-champions-league-png-820_654_preview.png');
+  @include trophy;
+  @include trophyUnderCover;
+}
+
+.barca__title__la-liga {
+  background: url('https://www.thesportsdb.com/images/media/league/trophy/vtsqsv1422280482.png');
+  @include trophy;
+  @include trophyUnderCover;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70736ce1-8703-4aee-ad96-5bde6bb063a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Git.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/.idea/JS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/js2020.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JS/script8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactClass/ReactClassShop/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactClass/ReactClassShop/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactClass/ReactClassToDo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactClass/ReactClassToDo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactClass/SWAPI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactClass/SWAPI/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReactHooks/Hooks/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ReactHooks/Hooks/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/.idea/SOLID.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/1.S.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/2.O.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/3.L.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/4.I.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOLID/5.D.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1kQMPyNCAqhVNvu7YDzK97JVRhq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70736ce1-8703-4aee-ad96-5bde6bb063a1" name="Default Changelist" comment="" />
+      <created>1605628345110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605628345110</updated>
+      <workItem from="1605628346574" duration="231000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

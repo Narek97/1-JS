@@ -1,0 +1,18 @@
+@mixin blxStyle($bgColor, $width, $floatPosishon, $marginPosition: 0) {
+  width: $width;
+  background-color: $bgColor;
+  float: $floatPosishon;
+  margin: 0 $marginPosition;
+  height: calc(100vh - 140px);
+  text-align: center;
+  display: inline-block;
+}
+
+@mixin piece($bgColor, $polygon, $top, $bottom, $left, $right) {
+  background-color: $bgColor;
+  clip-path: $polygon;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+}

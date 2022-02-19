@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://Narek:mongodbpassword@cluster0-hklvj.mongodb.net/MERN",
+  "jwtSecret": "secret",
+  "baseUrl": "http://localhost:5000"
+}

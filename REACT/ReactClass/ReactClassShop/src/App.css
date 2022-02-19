@@ -1,0 +1,21 @@
+.scroll{
+    overflow: scroll;
+    height: 444px;
+}
+
+.table{
+    text-align: center;
+}
+
+.AddProduct,.MyCart{
+    text-align: center;
+}
+
+.AddProduct input,.MyCart input{
+    width: 40%;
+    margin: 5px;
+}
+
+.icon{
+    width: 15px;
+}

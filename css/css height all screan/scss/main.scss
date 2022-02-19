@@ -1,0 +1,232 @@
+@import './mixins';
+$bgColor: #525058;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  background-color: $bgColor;
+}
+
+// //1
+// .main {
+//   margin: 10px;
+// }
+
+// .main__blockLeft {
+//   @include blxStyle($bgColor, 25%, left);
+// }
+// .main__blockCenter {
+//   @include blxStyle($bgColor, 40%, none, 5%);
+// }
+// .main__blockRight {
+//   @include blxStyle($bgColor, 25%, right);
+// }
+
+////2
+
+// html,
+// body {
+//   height: calc(100% - 10px);
+//   margin: 0;
+// }
+// .main {
+//   display: flex;
+//   justify-content: space-between;
+//   flex: 1 1 auto;
+//   margin: 0 10px;
+//   height: calc(100% - 120px);
+// }
+// .main__blockLeft {
+//   width: 25%;
+//   background-color: $bgColor;
+// }
+// .main__blockCenter {
+//   width: 45%;
+//   background-color: $bgColor;
+// }
+// .main__blockRight {
+//   width: 25%;
+//   background-color: $bgColor;
+// }
+
+// // 3
+// .main {
+//   display: grid;
+//   grid-template-columns: 25% 40% 25%;
+//   grid-template-rows: 100%;
+//   gap: 5%;
+//   margin: 10px;
+//   height: calc(100vh - 140px);
+// }
+// .main__blockLeft {
+//   background-color: $bgColor;
+// }
+// .main__blockCenter {
+//   background-color: $bgColor;
+// }
+// .main__blockRight {
+//   background-color: $bgColor;
+// }
+
+//4
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box__header {
+  flex: 0 1 auto;
+  height: 60px;
+  background-color: grey;
+  text-align: center;
+  margin: 1%;
+}
+
+.box__content {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 1%;
+}
+
+.box__content--box1 {
+  height: 100%;
+  width: 25%;
+  background-color: grey;
+}
+.box__content--box2 {
+  height: 100%;
+  width: 46%;
+  background-color: grey;
+  margin: 0 2%;
+}
+.box__content--box3 {
+  height: 100%;
+  width: 25%;
+  background-color: grey;
+}
+
+////5
+
+// ................................
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+//   outline: none;
+// }
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   overflow: hidden;
+//   background-color: #f44336;
+// }
+
+// .mainBox {
+//   position: relative;
+//   width: 500px;
+//   height: 500px;
+// }
+
+// .box {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 50%;
+//   border: 10px solid #fff;
+//   overflow: hidden;
+//   transition: all ease 5s;
+// }
+
+// span {
+//   position: absolute;
+//   width: 50%;
+//   height: 50%;
+//   display: inline-block;
+// }
+// .span1 {
+//   @include piece(#ffeb3b, polygon(0 92%, 100% 50%, 0 8%), 120px, 0, 0, 0);
+// }
+// .span2 {
+//   @include piece(
+//     #9aff3b,
+//     polygon(100% 92%, 0 50%, 100% 8%),
+//     120px,
+//     none,
+//     none,
+//     0
+//   );
+// }
+// .span3 {
+//   @include piece(
+//     #3bf8ff,
+//     polygon(50% 0, 8% 100%, 92% 100%),
+//     none,
+//     0,
+//     120px,
+//     none
+//   );
+// }
+// .span4 {
+//   @include piece(#ff3bc4, polygon(50% 100%, 92% 0, 0% 0), 0, none, 120px, none);
+// }
+
+// .box2 {
+//   width: 100%;
+//   height: 100%;
+//   transform: rotate(-135deg);
+// }
+// span b {
+//   width: 65px;
+//   height: 65px;
+//   line-height: 65px;
+//   border-radius: 50%;
+//   font-size: 26px;
+//   text-align: center;
+//   background-color: #fff;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// .spin {
+//   position: absolute;
+//   width: 90px;
+//   height: 30px;
+//   left: 43%;
+//   margin-top: 20px;
+//   background-color: aqua;
+//   border: none;
+//   border-radius: 10px;
+//   cursor: pointer;
+// }
+// .spin:hover {
+//   background-color: rgb(60, 255, 0);
+// }
+
+// .triangle {
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   top: -10%;
+//   border: 20px solid transparent;
+//   border-top: 40px solid green;
+//   left: 45%;
+//   z-index: 2;
+// }

@@ -1,0 +1,491 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a40344; }
+
+main {
+  padding-top: 10px;
+  margin-bottom: 100px; }
+
+.container {
+  padding: 50px 0;
+  width: 100%;
+  height: 500px;
+  background-color: #3b5174;
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  grid-template-areas: 'box-1 . . . box-5' 'box-1 box-2 . box-4 box-5' 'box-1 box-2 . box-4 box-5' 'box-6 box-2 box-3 box-4 box-10' 'box-6 box-7 box-3 box-9 box-10' 'box-6 box-7 box-3 box-9 box-10' 'box-11 box-7 box-8 box-9 box-14' 'box-11 box-12 box-8 box-13 box-14' 'box-11 box-12 box-8 box-13 box-14' '. box-12 . box-13 .'; }
+
+.item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: box-1;
+  background: url("https://www.teahub.io/photos/full/84-848948_fine-design-fcb-wallpaper-fc-barcelona-s-1080p.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  grid-area: box-2;
+  background: url("https://lh3.googleusercontent.com/proxy/OA6mwhHlZgdmDob6STPMHbPg60Dk-Sw8-t1i36XugKYWCXAiTIeackKjEFFj6OBRn_ChijIiBGMa0SnXUmS6owgKkLBWW7laYP79dbDQZJ4eJyQi3oGgPL3UcVfVIro");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-3 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  grid-area: box-3;
+  background: url("https://i.pinimg.com/originals/6e/b3/92/6eb392b2e022746b193f3697659d8a52.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 7;
+  grid-area: box-4;
+  background: url("https://cdn.wallpapersafari.com/7/1/3NrW2o.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 9;
+  grid-area: box-5;
+  background: url("https://wallpaperaccess.com/full/483251.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-6 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: box-6;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE33MOMkDkwp84uhi6cmd_uaCbGvzicd6lzg&usqp=CAU");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-7 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  grid-area: box-7;
+  background: url("https://wallpaperaccess.com/full/4071966.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-8 {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  grid-area: box-8;
+  background: url("https://wallpaperaccess.com/full/450685.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-9 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 7;
+  grid-area: box-9;
+  background: url("https://3.bp.blogspot.com/-ew6L-XvlYao/XIbH6J1YoKI/AAAAAAAAIb0/wuq0vI-bhBAvLF9ThZO1d9etSB5gXW3UgCHMYCw/s1600/barca-logos.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-10 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 9;
+  grid-area: box-10;
+  background: url("https://i.pinimg.com/originals/8f/a6/78/8fa67821ca23f314d9231e5483f6d60c.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-11 {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: box-11;
+  background: url("https://i.pinimg.com/originals/86/fe/91/86fe919b9d1c0f1678b2d0f048e4a133.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-12 {
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 3;
+  grid-area: box-12;
+  background: url("https://i.pinimg.com/originals/bb/2d/5f/bb2d5fa314160de6aa64f78984fde16b.jpg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-13 {
+  -ms-grid-row: 15;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 7;
+  grid-area: box-13;
+  background: url("https://cdn.shopify.com/s/files/1/1603/4747/products/fc-barcelona-crest-led-neon-sign-yellow-7.jpg?v=1508949736");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.item-14 {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 9;
+  grid-area: box-14;
+  background: url("https://www.fcbarcelona.com/photo-resources/2019/03/29/66e67aff-2f00-462a-bf82-27cb119d144e/GgjfqKSA.jpg?width=624&height=368");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.barca__title {
+  margin-top: 20px; }
+  .barca__title h1 {
+    text-align: center; }
+  .barca__title section {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.barca__title__ucl {
+  background: url("https://i.dlpng.com/static/png/5390422-uefa-champions-league-trophy-magnet-champions-league-final-champions-league-png-820_654_preview.png");
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .barca__title__ucl:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    width: 20%;
+    height: 3px;
+    background-color: #a40344;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .barca__title__ucl:hover {
+    -webkit-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    transform: translate(0px, 5px); }
+    .barca__title__ucl:hover:before {
+      width: 30%;
+      left: 35%; }
+
+.barca__title__la-liga {
+  background: url("https://www.thesportsdb.com/images/media/league/trophy/vtsqsv1422280482.png");
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .barca__title__la-liga:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+    width: 20%;
+    height: 3px;
+    background-color: #a40344;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .barca__title__la-liga:hover {
+    -webkit-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    transform: translate(0px, 5px); }
+    .barca__title__la-liga:hover:before {
+      width: 30%;
+      left: 35%; }
+
+.tabel {
+  margin: 50px auto 0;
+  width: 70%;
+  background-color: #2a3138;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.signup {
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+button:focus {
+  outline: none; }
+
+button {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a40344;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer; }
+  button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 42px;
+    -webkit-animation: pulse-purple-small 3.5s infinite;
+    animation: pulse-purple-small 3.5s infinite; }
+  button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 42px;
+    -webkit-animation: pulse-purple-medium 3.5s infinite;
+    animation: pulse-purple-medium 3.5s infinite; }
+
+@-webkit-keyframes pulse-purple-small {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #c2034f;
+    box-shadow: 0 0 0 0 #c2034f; }
+  100%,
+  30% {
+    -webkit-box-shadow: 0 0 0 16px transparent;
+    box-shadow: 0 0 0 16px transparent; } }
+
+@keyframes pulse-purple-small {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #c2034f;
+    box-shadow: 0 0 0 0 #c2034f; }
+  100%,
+  30% {
+    -webkit-box-shadow: 0 0 0 16px transparent;
+    box-shadow: 0 0 0 16px transparent; } }
+
+@-webkit-keyframes pulse-purple-medium {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #e0035b;
+    box-shadow: 0 0 0 0 #e0035b; }
+  100%,
+  30% {
+    -webkit-box-shadow: 0 0 0 26px transparent;
+    box-shadow: 0 0 0 26px transparent; } }
+
+@keyframes pulse-purple-medium {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #e0035b;
+    box-shadow: 0 0 0 0 #e0035b; }
+  100%,
+  30% {
+    -webkit-box-shadow: 0 0 0 26px transparent;
+    box-shadow: 0 0 0 26px transparent; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f5f5; }
+
+header {
+  height: 70px;
+  color: #fff;
+  background: rgba(12, 40, 84, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.logo {
+  cursor: pointer;
+  width: 30%; }
+
+nav {
+  width: 70%; }
+  nav a {
+    color: #fff;
+    text-decoration: none; }
+
+.nav__menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px; }
+  .nav__item:hover {
+    cursor: pointer;
+    background-color: #a40344; }
+    .nav__item:hover ul {
+      -webkit-transform: perspective(600px) rotateX(0deg);
+      transform: perspective(600px) rotateX(0deg);
+      -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+      transform-origin: 0% 0%; }
+
+.fa-caret-down {
+  font-size: 11px; }
+
+.nav__item--dropdown--show {
+  position: relative; }
+
+.dropdown--menu {
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  width: 220px;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+  display: block;
+  padding: 5px 0 10px 0;
+  -webkit-transform: perspective(600px) rotateX(-90deg);
+  transform: perspective(600px) rotateX(-90deg);
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .dropdown--menu li {
+    padding: 10px; }
+    .dropdown--menu li:hover {
+      background-color: #a40344; }
+      .dropdown--menu li:hover a {
+        color: #fff; }
+  .dropdown--menu a {
+    color: #000000; }
+
+.dropdown--menu--multimedia {
+  width: 100%; }
+
+.active {
+  background-color: #a40344; }
+
+#open,
+#close {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto; }
+    header nav {
+      width: 100%; }
+    header ul a {
+      padding: 30px 0; }
+    header img {
+      width: 15em;
+      margin-top: 20px; }
+  .fa-caret-down {
+    position: absolute;
+    right: 10px; }
+  .dropdown--menu {
+    width: 100%;
+    height: auto;
+    overflow: scroll; }
+  .logo {
+    width: 100%; }
+    .logo span {
+      position: absolute;
+      right: 10px;
+      top: 30px;
+      font-size: 14px; }
+  .nav__menu {
+    display: block;
+    overflow: hidden;
+    height: 0; }
+  .nav__menu--active {
+    width: 100%;
+    height: 400px;
+    overflow: inherit; }
+  #open {
+    display: block; }
+  #close {
+    display: none; } }

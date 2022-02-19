@@ -1,0 +1,44 @@
+.....................................................................................................................
+                                    Nodi meji zavaskoy modulnery
+.....................................................................................................................
+
+console.log(__dirname) - cuycha tali vortex enq gtnvum
+console.log(__filename) - cuycha tali vortex enq gtnvum ev vor papkum
+module.exports = anuny - tvyal faili tvyalnery urish faylum ogtagortelu hamar
+require('haschen') - urish papki tvyalnery et papkum ogtagortelu hamar
+
+const path = require('path') - path modely miachnelu hamar
+https://nodejs.org/dist/latest-v13.x/docs/api/path.html yndhanur path moduli bolor hramannery
+console.log(path.basename(__filename)) - fayli anuny vortex vor gtnvum enq
+console.log(path.dirname(__filename)) - tvyal faily vor papkum e gtnvum
+console.log(path.parse(__filename)) - yndhanur texekutyuna berum
+
+const fs = require('fs') - FS(File Sistem) failer papkeq sarqelu hamar
+https://nodejs.org/dist/latest-v13.x/docs/api/fs.html yndhanur FS moduli bolor hramannery
+
+const os = require('os') = OS(operation sistems) tvyal kaputeri vorov ashxatum enq  texekutyunner imanalu hamar
+
+const EventEmitter = require('events') - classneri het ashxatelu hamar
+
+const http = require('http') = serveri het kap hastatelu hamar
+
+.....................................................................................................................
+                                    Nodi i anelu modulner
+.....................................................................................................................
+ 
+npm i uuid,const uuid = require('uuid/v4') npm i uuid - tarber id ner generachnelu hamar
+npm i express-session - nodum sesia stextelu hamar sesian hishoxutyan tiruyta
+npm i bcryptjs - paroli hashavorman hamar
+npm i csurf - sessian pashtpatnelu hamar vor chkaranan sayty kotren
+npm i connect-flash - login kam nman baneri jamanak sxal aneluch sxalnery cuych talu hamar
+npm i nodemailer - tarber email sayteri het ashxatelu hamar
+npm i nodemailer-sendgrid-transport - konkret sendgrit email sayti het ashxatelu hamat
+npm install express-validator - validaciayi hamar, lav sayt https://express-validator.github.io/docs/
+npm i multer - faileri het ashxatelu hamar, orinak nkar nerbernelu
+
+
+.....................................................................................................................
+                                    Nody iskakan emailneri het ashxatelu hamar
+.....................................................................................................................
+SendGrid
+https://app.sendgrid.com/settings/api_keys es saytov grancvum enq u verdnum apikey

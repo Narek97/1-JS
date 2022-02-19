@@ -1,0 +1,54 @@
+npm i -D webpack webpack-cli => webpask i anelu hamar
+npm i clean-webpack-plugin => dist papkan vory petq chi maqrelu hamar
+
+npx webpack => webacky run talu hamar
+npx webpack --mode development => run talu hmar development rejimum
+
+ete chenq uzum derov grenq vor rejimum ashxati stextum enq weback-config.js file u grum
+mode kara lini erku rejimum development u production
+module.exports = {
+    mode: "development",
+    plugins: [
+       new CleanWebpackPlugin
+    ]
+};
+
+
+nkarneri jamanak webpacky chi gaskanumdra hamar arandin modul enq nstachnum
+npm i file-loader u grum en loadernery vory mez petqa orinak nkari hamar
+https://webpack.js.org/loaders/ dokumentachian
+module.exports = {
+    mode: "development",
+
+    module: {
+        rules: [
+            {
+                test: /\.png$/,
+                use: [{loader: 'file-loader'}]
+            }
+        ]
+    }
+};
+
+ete uzum enq orinak bolor nkarnery linen mek papkum
+nolor loaderneri greladzevy dokumentachiayum ka u hishel petq chi
+module.exports = {
+    mode: "development",
+
+    module: {
+        rules: [
+            {
+                test: /\.png$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'images',
+                   
+                    }
+                }]
+            }
+        ]
+    }
+};
+
+npm i -D babel-loader  webpacky babeli het kcelu hamar

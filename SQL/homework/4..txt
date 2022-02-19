@@ -1,0 +1,57 @@
+--1.
+select * from employees 
+where length(first_name)>10;
+
+--2.
+select * from employees 
+where mod (salary , 1000) = 0;
+
+--3.
+select phone_number, substr(phone_number,0,3) 
+from employees
+where phone_number like '___.___.____'
+;
+
+--4. 
+select first_name from employees
+where sunstr(first_name,-1) = 'm'
+and length(first_name)>5;
+
+--5. 
+select NEXT_DAY(TRUNC(SYSDATE), 'FRIDAT') 
+as next_friday from dual;
+
+--6.
+select * from employees
+where months_between(sysdate,hire_date)>150;
+
+--7.
+select replace(phone_number,'.','-') from employees;
+
+--8.
+select UPPER(first_name), LOWER(email), INITCAP(job_id)  from employees;
+
+--9.
+select  concat(first_name,salary)  from employees;
+
+--10. 
+select hire_date,round(hire_date,'MM'), TRUNC(hire_date,'yyyy') 
+from employees;
+
+--11. 
+select rpad(first_name,10,'$'),lpad(last_name,15,'!') from employees;
+
+--12. 
+select first_name, instr(first_name,'a',1, 2) from employees;
+
+--13.
+select '!!!HELO!!MYFRIEND!!',replace('!!!HELO!!MYFRIEND!!','!',' ') from dual;
+
+--14.
+select salary,salary*3.1415, round(salary*3.1415),
+trunc(salary*3.1415,-3)/1000
+from employees;
+
+--15.
+select hire_date,add_months(hire_date,6),last_day(hire_date)
+from employees;

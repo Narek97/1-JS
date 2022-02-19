@@ -1,0 +1,71 @@
+.signup {
+  width: 100%;
+  height: 100px;
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a40344;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 42px;
+    animation: pulse-purple-small 3.5s infinite;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 42px;
+    animation: pulse-purple-medium 3.5s infinite;
+  }
+}
+
+@keyframes pulse-purple-small {
+  0% {
+    box-shadow: 0 0 0 0 #c2034f;
+  }
+
+  100%,
+  30% {
+    box-shadow: 0 0 0 16px transparent;
+  }
+}
+
+@keyframes pulse-purple-medium {
+  0% {
+    box-shadow: 0 0 0 0 #e0035b;
+  }
+
+  100%,
+  30% {
+    box-shadow: 0 0 0 26px transparent;
+  }
+}

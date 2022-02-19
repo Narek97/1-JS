@@ -1,0 +1,69 @@
+					Angular Services
+
+1. servic sarqelu hamar ng g s anuny
+
+3. service classa vori mej grum enq logika vor karanq ogtagorenq cankachat componentum uxaki iran import anelov
+or.
+servic.ts um 
+import {Injectable} from "@angular/core";
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class AppCounterServices {
+  counter = 0
+
+  increase() {
+    this.counter++;
+  }
+
+  decrease() {
+    this.counter--;
+  }
+}
+
+app.ts um
+import {AppCounterServices} from "./services/app-counter.services";
+constructor(public appCounterService:AppCounterServices) {
+
+}
+
+app.html um
+<div class="card">
+    <h2>App Counter: {{appCounterService.counter}}</h2>
+    <button class="btn" (click)="appCounterService.increase()">+</button>
+    <button class="btn" (click)="appCounterService.decrease()">-</button>
+</div>
+
+4. baych ete nuyn service ogtagortum enq mi qani componentum apa mi componentum popoxelov arjeqy
+kpopoxvi nayev myus componentum dra hamar vor meki popoxutyuny chazdi myusin grum enq
+or.
+ 
+service.ts um  @Injectable() 
+
+app com.ts um 
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  providers:[LocalCounterService]
+})
+u sench vor componentum vor uzum enq
+
+5.servicin data talu hamar
+or.
+service.ts um 
+log(text){
+	console.log(text)
+}
+
+app.ts um
+import {AppCounterServices} from "./services/app-counter.services";
+	constructor(public appCounterService:AppCounterServices) {
+
+}
+
+add(){
+ this.appCounterService.log('data')
+}

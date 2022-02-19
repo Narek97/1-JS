@@ -1,0 +1,112 @@
+					Formi i validacia
+
+1. app.module.ts um imports dashtum import enq anum ReactiveFormsModule
+
+2. app.component.ts um import enq anum FormGroup u ngOninit funkciayum stextum new FormGroup({})
+or.
+import {FormGroup} from '@angular/forms';
+form: FormGroup;
+
+    ngOnInit() {
+        this.form = new FormGroup({});
+    }
+3. html componentum form tegi mej grum  [formGroup]="form" (ngSubmit)="submit()"
+or.
+<form class="card" [formGroup]="form" (ngSubmit)="submit()">
+ 	<h1>Angular Forms</h1>
+</form>
+4. formi inputneri arjeqnery verdnelu hamar FormGroup um stextum enq FormControl u veragrum en dashty vory petqa
+or.
+  ngOnInit() {
+        this.form = new FormGroup({
+            email: new FormControl(''),
+            password: new FormControl('')
+        });
+    }
+u htmlum formControlName atributov talis anuny
+or.
+  <input type="text" placeholder="Email" formControlName="email">
+5. validachiayi hamar FormControl in errkrd parametr zangvati tesqov talis enq Validators atributy u ira dashtery
+or.
+   ngOnInit() {
+        this.form = new FormGroup({
+            email: new FormControl('',
+                [
+                    Validators.email,
+                    Validators.required
+                ]),
+            password: new FormControl('',
+                [
+                    Validators.required,
+                    Validators.minLength(6)
+                ])
+        });
+    }
+6. htmlum css talu hamar angulary avtomat classnera avelachnum nayelov et classnery karanq tanq
+mer uzat css y tarber baneri depqum
+7. htmlum namaki tesqov errornery cuych talu hamar ogtagortum enq *ngIf
+or.
+ <div
+                    *ngIf="form.get('password').invalid && form.get('password').touched"
+                    class="validation"
+            >
+                <small *ngIf="form.get('password').errors.required">
+                    Parol ne mojet bit pustim
+                </small>
+                <small *ngIf="form.get('password').errors.minlength">
+                    minimalnaya dlina parola ne mene {{form.get('password').errors.minlength.requiredLength}}
+                </small>
+            </div>
+
+8. optionneri kam nmanatip grupneri hamar arandin FormGroup i mej FormGroup enq stextum
+or.
+ngOnInit() {
+        this.form = new FormGroup({
+            address: new FormGroup({
+                country: new FormControl('ru'),
+                city: new FormControl('', Validators.required),
+            })
+        });
+    }
+htmli mej grum enq yndhanur divin talis enq formGroupName isk selectin formControlName
+or.
+<div class="card" formGroupName="address">
+    
+    <div class="form-control">
+          <select formControlName="country">
+                <option value="ru">Россия</option>
+                <option value="ua">Украина</option>
+                <option value="by">Беларусь</option>
+          </select>
+    </div>
+
+</div>
+9. mer sepakan validatory stextelu hamar arandin stextum enq ts fail u class talis anun
+or.
+import {FormControl} from '@angular/forms';
+
+export class MyValidators {
+    static restrictedEmails(control: FormControl): { [key: string]: boolean } {
+        if (['v@mail.ru', 'test@mail.ru'].includes(control.value)) {
+            return {
+                restrictedEmails: true
+            };
+        }
+
+        return null;
+    }
+}
+var com. vor ogtagortenq dra ts failum import enq anum
+or.
+  this.form = new FormGroup({
+            email: new FormControl('',
+                [
+                    MyValidators.restrictedEmails
+                ]),
+})
+
+isk htmlum errory bachatrelu hamar grum 
+or.
+<small *ngIf="form.get('email').errors.restrictedEmails">
+         Email {{form.get('email').value}} zapreshon
+</small>

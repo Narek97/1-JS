@@ -1,0 +1,49 @@
+			Pips
+
+1.pipe grelu hamar dnum enq | nshany u pipi nauny, bolor piperi masin docuentaciayum
+
+karevor pipery
+
+2.number errkrord parametr te qani tiv cuych ta ete amboxj tiv storaketich heto ishqan cuych ta
+or.  
+  <p>
+    {{e | number:'1.1-5' }}
+  </p>
+
+  <p>
+    {{e | number:'3.1-2' }}
+  </p>
+
+3. string
+or.
+ <p>
+    {{str | uppercase | lowercase | titlecase}}
+  </p>
+
+4. mer sepakan pipe stextelu hamar ng g p anuny konkret papkum ng g p papkianuny/anuny
+
+oktagoretelu hamar uxaki cankachat htmlum tegi meg grum enq anuny u trvox parametry
+or.
+  <p>{{10 | mult}}</p>
+  <p>{{2 | mult:3}}</p>
+u pipum grum mer uzat logikan
+
+5.vorpesi pipy stugi bolor popoxutyunnery htmlum pipi mej vory uzum enq ogtagenq grum enq  pure: false
+or .
+@Pipe({
+  name: 'filter',
+  pure: false
+})
+baych es anel menak ete iskakanich petqa vor animast chtanrabernvi
+
+6. asinxron ashxatanqi het ogtagortum enq | async pipy
+
+7. async pipy RxJs i het ogtagortelu hamar
+or.
+  date: Observable<Date> = new Observable(obs => {
+    setInterval(() => {
+      obs.next(new Date())
+    },1000)
+  })
+
+vorpesi el chgrenq .subscribe miangamich htmlum karanq grenq | async pipy

@@ -1,0 +1,25 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    background: #07cbee;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    color: #000000;
+}
+
+.active{
+    color: #ffffff;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+

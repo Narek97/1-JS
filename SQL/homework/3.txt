@@ -1,0 +1,34 @@
+--1
+select * from employees
+where first_name = 'David';
+--2
+select * from employees
+where job_id = 'FI_ACCOUNT';
+--3
+select last_name, first_name, salary, department_id from employees
+where department_id = 50 and salary > 4000;
+--4
+select * from employees
+where department_id = 20 or department_id = 30;
+--5
+select * from employees
+where first_name like '_a%a';
+--6
+select * from employees
+where  (department_id = 50 or department_id = 80) 
+and commission_pct is not null
+ORDER BY 4;
+--7
+select * from employees 
+where first_name like '%n%n%';
+--8
+select * from employees
+where first_name like '%_____%'
+ORDER BY  department_id desc nulls last;
+--9
+select * from employees
+where salary BETWEEN 3000 AND 7000 and commission_pct is null
+and job_id in ('PU_CLERK', 'ST_MAN', 'ST_CLERK');
+--10
+select * from employees
+where first_name like '%\%%' escape '\';

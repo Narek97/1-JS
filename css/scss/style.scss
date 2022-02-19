@@ -1,0 +1,62 @@
+// Variables
+$color-text: yellow;
+
+// Map
+$font-weight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': bold,
+);
+
+// Mixin
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// Mixin 2
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background-color: blueviolet;
+    color: aqua;
+  }
+}
+
+// // Placeholder
+%paint {
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
+}
+
+// function
+@function weight($weight-name) {
+  @return map-get($font-weight, $weight-name);
+}
+
+.main {
+  // math + - / *
+  width: 100% - 10%;
+  //mixin use
+  @include flexCenter(column);
+  @include theme($light-theme: true);
+
+  &__paragraph1 {
+    color: $color-text;
+  }
+  &__paragraph2 {
+    // placeholder use
+    @extend .main__paragraph1;
+    @extend %paint;
+  }
+  &__paragraph3 {
+    // function use
+    font-weight: weight(bold);
+    &:hover {
+      cursor: none;
+    }
+  }
+}

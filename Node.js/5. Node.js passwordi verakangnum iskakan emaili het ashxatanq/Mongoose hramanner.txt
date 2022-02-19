@@ -1,0 +1,14 @@
+https://metanit.com/web/nodejs/6.8.php amena karevor hramannery
+
+
+ const courses = await Course.find().populate('userId','email name').select('img price title')
+ find - bazayich verdnum enq tvyalnery
+ ...................................
+ populate - ogtagortum enq vor ete mongoyi mi dashtum unenq myus dashti asenq useri id et dasty find aneluch
+            heto myus dashti tvyalnerne beri  orinak es depqum curseri dashtum ka useri id ov avelachrela et coursy 
+            u populate mijochov verdnum enq nayev user dashti et useri tvyalnery, 
+            erkrord parametrov verdnum enq en dashtery voronq mez petqa orinam email name 
+ ...................................
+ select - i mijochov verdnum enq menak en dashter voronq mez petqa es kap chuni populate ekat tvyalneri het
+ ...................................
+npm i connect-mongodb-session - miavoruma mongo.db ev express-session

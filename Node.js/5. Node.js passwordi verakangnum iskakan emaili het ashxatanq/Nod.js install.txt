@@ -1,0 +1,10 @@
+1. npm init - package.jsony install anelu hamar
+2. npm i nodemon -D - vor servery amen kodi popoxutyunich heto inqniran ubdate lini
+(-D vor tvyal moduly qci devDependencies mej)
+package.json um scripti texy es en qrum u teminalum npm run dev grum
+ "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+3. npm i express - expressi het ashxatelu hamar
+

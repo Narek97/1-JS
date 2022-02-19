@@ -1,0 +1,82 @@
+						ANGULAR osnovi
+
+1. componenti stextum - ng g c <anuny>
+2. comp. stextum aranch unitesti - ng g c <anuny> --skipTests
+3. comp. popoxkan hatararum enq ts faili classi mej or.  title = 'Dynamic title'
+4. comp. dinamik kerpov ban cuych talu hamar - {{popoxakani.anuny}}  or. <p>{{title}}</p>
+5. miakomani biding ts -> html - [ ] or. <img [src]="img" alt=""> htmlum img popxakani het kap,   
+6. miakomani biding html-> ts  - ( ) or. <button (click)="onClick()" >click</button> ts um onClick() funkciayi het kap
+7. erkkoxmani binding dra hamar app.module.ts um import dashtum import enq anum FormsModule 
+	or. 
+	import {FormsModule} from "@angular/forms";
+	imports: [
+    		BrowserModule,
+    		FormsModule,
+  	],
+	u chankachat htmlum karang ogtagortenq irar het [(ngModel)] or. <input type="text" [(ngModel)]="title">
+8. dinamik css i popoxum [ngStyle]="{}" mejy karanq sovorakan css tal u paymanov css
+	or.
+	<div [ngStyle]="{
+  		width: '200px',
+  		height: '200px',
+  		borderRadius:'5px',
+  		border:'1px solid #ccc',
+  		background:bgToggle?'red':'blue'
+	}">
+	bgToggle popxakana vory kam true kam false
+9. dinamik class talu hamar [ngClass] = "{}" kam [class.anuny] = 'payma'
+	or.
+	<p [ngClass]="{
+  		red:bgToggle,
+  		blue:!bgToggle
+	}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, incidunt?</p>
+	kam
+	<p
+  		[class.blue]="!bgToggle"
+  		[class.red]="bgToggle"
+	>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+10. payaman stugelu hamar *ngIf="anuny" else grelu hamar *ngIf="anunuy;else anuny"
+	or.
+	<p *ngIf="toggle;else blueP" class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	<ng-template #blueP>
+  		<p class="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</ng-template>
+11. payman swichov stugelu hamar [ngSwitch]="anuny"
+	or.
+	<div [ngSwitch]="toggle">
+  		<p *ngSwitchCase="true" class="red">Lorem ipsum.</p>
+  		<p *ngSwitchCase="false"  class="blue">Lorem ipsum dolor.</p>
+  		<p *ngSwitchDefault>Lorem ipsum dolor sit.</p>
+	</div>
+12. cikl fralu hamar ngFor="let post of anuny"
+	or.
+	ts um unenq   obj = [
+    		{title:'Post 1',author:'Max',comments:[
+        	{name:'Alex',text:'lorem 1'},
+        	{name:'Alex',text:'lorem 2'},
+        	{name:'Alex',text:'lorem 3'},
+      	]},
+
+   	 {title:'Post 2',author:'Max 2',comments:[
+        	{name:'Alex 2',text:'lorem1'},
+        	{name:'Alex 2',text:'lorem2'},
+        	{name:'Alex 2',text:'lorem3'},
+      	]}
+  	]
+
+	htmlum cikli hamar
+	<ul style="list-style: none">
+  		<li *ngFor="let post of obj">
+    			<p>{{post.title}} <b>{{post.author}}</b> </p>
+    			<ul>
+      				<li *ngFor="let comment of post.comments">
+        				<div>
+          					<small>{{comment.name}}</small>
+          					<p>{{comment.text}}</p>
+        				</div>
+     				 </li>
+    			</ul>
+  		</li>
+	</ul>
+
+

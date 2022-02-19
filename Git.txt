@@ -1,0 +1,74 @@
+Git History Diff giti plagin V-Studio
+...........................................................
+
+menak araji angam erb mtnum es qo git
+$ git config --global user.name "John Doe"
+$  git config --global user.email "johndoe@example.com"
+
+git config --global -e - confignery tenalu hmar
+
+...........................................................
+
+gitum pahelu hamar
+git init - stextuma git
+git add . - hishoxutyunum pahelu hamar
+git status - chuycha talis hishoxutyunum pahel enq te che
+git commit -m "first commit" - coment grelu hamar
+..................................................
+git remote add origin https://github.com/Narek97/gitTest.git - vor gitum  pahes menak araji angam
+..................................................
+git push -u origin master - gitum avelachnelu hamar
+...........................................................
+
+git pull - gitum pahaty qashelu hamar 
+
+...........................................................
+urish hramanner
+git log - bolor commitnery tenalu hamar
+git log -p - aveli konkret commitnery tenalu hamar ory,jamy
+git restore <faili anuny> - veradarnuma verjin commitin, sax popoxaty jnjuma
+git diff <faili anuny> - cuycha tali inch taza kod enq avelachre kam jnje
+git diff --stage <faili anuny> - cuycha tali en popoxutyuny git add -ch het
+win-ch dus galu hamar sexmel Esc grel :x
+git log --oneline --graph --decorate --all - bolor push aratnery tenalu hamar
+git checkout . - ete kodum popxutyunner enq are u hishoxutunum chenq pahe uzum enq het gnal minjv verji pull araty
+git reset . - ete kodum popxutyunner enq are u hishoxutunum  pahel enq(git add. ) heto nor git checkout .
+git reset --hard HEAD~1 - ete kodum popxutyunner enq are u commit enq anum(git commit) 
+git reset --soft HEAD~1 - ete kodum popxutyunner enq are u commit enq anum(git commit) baych chenq uzum grat kody jnjvi
+
+git --amend - vor el commit chgrenq u hin commit grati vra nsti
+
+...........................................................
+chuxer(branch) stextelu hamar
+git branch - cuycha talit vor chuxum enq gtnvum
+git branch -a - cuycha tali bolor chuxery u vorum enq menq hima
+git branch <anuny> - stextuma nor chux
+git branch -d <anuny> - jnjuma chuxy
+git checkout <anuny> - gnuma et chux
+git checkout -b <anuny> - stextum u miangamich gnuma et chux
+git branch -m <anuny> - stextat chuxi anuny poxelu hamar
+git co <commenti kody or f375b80> - heta gnum et comenti kody
+
+...........................................................
+stash - ete cankanum enq pahel grat kody aranch push anelu,baych petqa het gnal hin vichaki
+git stash save <anuny> - graty save anelu hamar
+hit stash list - sax pahat stashery cuych talu hamar
+
+...........................................................
+giti hramannery karch grelu hamar 
+ mtnum enq C:\Users\папка_вашего_пользователя\.gitconfig
+ u grum 
+ [user]
+	name = Narek9727
+	email = narek.babayan.97.27@gmail.com
+[alias]
+larch hramanneri grelu devy
+	s = status --short
+	st = status
+	l = log --oneline --graph --decorate --all
+	g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+	br = branch
+	co = checkout
+
+webStormi terminalum cleari poxaren cls
+redaktori hramani mejich dus galu hamar sexmum enq q

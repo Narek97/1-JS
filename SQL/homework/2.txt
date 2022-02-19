@@ -1,0 +1,18 @@
+--1
+select * from regions;
+--2
+select first_name, department_id, salary, last_name from employees;
+--3
+select employee_id, email, hire_date-7  as "One week before hire date" from employees;
+--4
+select first_name|| '(' || job_id || ')' as our_employees from employees;
+--5
+select distinct first_name from employees;
+--6
+select job_title, 'Min='|| min_salary || ' Max=' || max_salary  as "info" ,max_salary as "Max",max_salary*2-2000 as "new_salary" from jobs;
+--7
+select 'Peter''s dog is very clever' from dual;
+--8
+select q'<Peter's dog is very clever>' from dual;
+--9
+select 100*365.25*24*60 from dual;

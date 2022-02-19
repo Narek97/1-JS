@@ -1,0 +1,21 @@
+1. npm init - package.jsony install anelu hamar
+2. npm i nodemon -D - vor servery amen kodi popoxutyunich heto inqniran ubdate lini
+(-D vor tvyal moduly qci devDependencies mej)
+package.json um scripti texy es en qrum u terminalum npm run dev grum
+ "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+3. npm i express - expressi het ashxatelu hamar
+4. npm i concurrently reacti het ashxatelu hamar vor servery u clienty irar kapenq
+server papki package.json um scripti texy es en qrum  
+(--prefix client vorovhetev client papkan gtnvua server papki mej)
+ "scripts": {
+    "script": "node app.js",
+    "server": "nodemon app.js",
+    "clinent": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run clinent\""
+  },
+isk clienti package.json um avelachnum enq  5000 serveri porti hamary vor kara inch ases lini 
+aysinqn vor clienti 3000 portich serveri 5000 portin hardum uxarki
+"proxy": "http://localhost:5000/",

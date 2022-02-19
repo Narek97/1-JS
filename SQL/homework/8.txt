@@ -1,0 +1,66 @@
+--1.
+select * from employees 
+where LENGTH(first_name) = 
+(select MAX(LENGTH(first_name)) from employees );
+
+--2.
+select * from employees 
+where salary > 
+(select AVG(salary) from employees);
+
+--3.
+select city 
+from employees e 
+JOIN departments d ON (e.department_id = d.department_id)
+JOIN locations l ON (d.location_id = l.location_id)
+GROUP BY city
+HAVING SUM (salary) = 
+    (select MIN(SUM(salary)) 
+    FROM employees e 
+        JOIN departments d ON (e.department_id = d.department_id)
+        JOIN locations l ON (d.location_id = l.location_id)
+    GROUP BY city);
+
+--4.
+select * from employees  
+where manager_id IN 
+(select employee_id from employees  where salary > 1500);
+
+--5.
+select * from departments 
+where department_id NOT IN (select DISTINCT department_id
+from employees where department_id IS NOT NULL);
+
+--6.
+select * from employees
+where employee_id NOT IN (select DISTINCT manager_id
+from employees where manager_id IS NOT NULL);
+
+--7.
+select * from employees e
+where (select count(*) 
+    from employees 
+    where manager_id = e.employee_id) > 6;
+    
+--8.
+select * from employees
+where department_id = 
+    (select department_id 
+    from departments where department_name = 'IT');
+    
+--9.
+select * from employees
+where manager_id IN 
+(select employee_id 
+from employees 
+where TO_CHAR (hire_date,'yyyy') = '2000')
+AND hire_date < TO_DATE ('01012000','DDMMYYYY');
+
+--10.
+select * from employees e
+where manager_id IN 
+(select employee_id 
+    from employees
+    where TO_CHAR (hire_date,'MM') = '01')
+AND (select LENGTH (job_title) from jobs
+    where job_id = e.job_id)>15;

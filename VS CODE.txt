@@ -1,0 +1,14 @@
+Ctrl+Shift+P => poisk menyu bachelu hamar
+Ctrl+B => koxi bary pakelu bachelu hamar
+Ctrl+Tab => eji vrayi bac faylery arag nayelu gnalu hmar
+Ctrl+W => ejy pakelu hamar
+Ctrl+P => ejy man galu u gnalu hamar
+Ctrl+F => poisk anelu hamar
+Ctrl+S => kody format(dzelu) anelu hamar
+Ctrl+j => terminaly bachel pakel
+
+
+
+firacode - style
+============================================
+rafc

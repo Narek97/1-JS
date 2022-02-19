@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  padding: 40px;
+  margin: 10px;
+  text-align: center;
+  background-color: #525058; }
+
+.main {
+  margin: 10px; }
+
+.main__blockLeft {
+  width: 25%;
+  background-color: #525058;
+  float: left;
+  margin: 0 0;
+  height: calc(100vh - 140px);
+  text-align: center;
+  display: inline-block; }
+
+.main__blockCenter {
+  width: 40%;
+  background-color: #525058;
+  float: none;
+  margin: 0 5%;
+  height: calc(100vh - 140px);
+  text-align: center;
+  display: inline-block; }
+
+.main__blockRight {
+  width: 25%;
+  background-color: #525058;
+  float: right;
+  margin: 0 0;
+  height: calc(100vh - 140px);
+  text-align: center;
+  display: inline-block; }

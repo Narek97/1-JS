@@ -1,0 +1,33 @@
+					RxJs
+
+1. himnakanum naxatesvata asinxron ashxatanqi hamar
+2. inqy uni tarber methodner voronq import en linum rxjs biblatekaich
+3. Observable asinxron kodi hamar
+or.
+ const stream$ = new Observable(observer => {
+
+            setTimeout(() => {
+                observer.next(1); esi promisi resolve 
+            }, 500);
+            setTimeout(() => {
+                observer.error('Error'); esi promisi reject
+            }, 1000);
+
+        });
+          this.sub = stream$
+            .subscribe(
+                value => console.log(value),
+                error => console.log(error)
+            );
+    }
+
+4 RxJs  async pipi het ogtagortelu hamar
+or.
+  date: Observable<Date> = new Observable(obs => {
+    setInterval(() => {
+      obs.next(new Date())
+    },1000)
+  })
+
+vorpesi el chgrenq .subscribe miangamich htmlum karanq grenq | async pipy
+
