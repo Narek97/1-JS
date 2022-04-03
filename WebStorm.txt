@@ -1,0 +1,8 @@
+rsc - React func component
+rcc - React class component
+Alt+j - nyn anunov bolor barery herdov nshelu hamar
+Ctrl+z - het gnalu hamar
+Ctrl+Shift+z - het gnachaty araj berelu hamar
+Ctrl+r - nshvat barerey update anelu hamar
+Ctrl+alt+l - save and format
+Shift + alt - et toxy verev nergev anelu hamar
