@@ -1,0 +1,2 @@
+npx prisma migrate dev - migrachian run anelu hamar
+npm prisma studio - prisman run anelu hamar vor db in local tenanq

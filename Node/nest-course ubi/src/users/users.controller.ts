@@ -19,10 +19,10 @@ import { ValidationPipe } from "../pipes/validation.pipe";
 
 @ApiTags("Users")
 @Controller("users")
-//controlleri mej grum enq rest hardumnery
+//controlleri mej grum enq crud hardumnery
 export class UsersController {
   //stex kanchum enq service vor karananq meji funkcianery ogtagortenq
-  constructor(private usersService: UsersService) {}
+  constructor(private usersService: UsersService) { }
 
   @ApiOperation({ summary: "Create user" })
   @ApiResponse({ status: 200, type: User })
