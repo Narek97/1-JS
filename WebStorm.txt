@@ -6,3 +6,5 @@ Ctrl+Shift+z - het gnachaty araj berelu hamar
 Ctrl+r - nshvat barerey update anelu hamar
 Ctrl+alt+l - save and format
 Shift + alt - et toxy verev nergev anelu hamar
+
+Add selection for next Occurrence - CTR + D
